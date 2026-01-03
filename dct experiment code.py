@@ -1,3 +1,4 @@
+#EV
 #setup, imports
 import time
 import random
@@ -122,6 +123,7 @@ right_rectangle = visual.Rect(win, width=rectangle_size[0], height=rectangle_siz
     #fixation cross
 fixation = visual.TextStim(win, text='+', color='black', height=40)
 
+#TS
 #define experiment function
 def experiment():
     global trial_count, stimuli
@@ -216,6 +218,7 @@ if "escape" in keys:
 #call experiment function
 experiment()
 
+#EV
 #saving data
 fieldnames = [
     "participant_id",
@@ -243,6 +246,7 @@ with open(f"{ID}_data.csv", "w", newline="") as f:
         }
         writer.writerow(row_to_write)
 
+#TS
 #display thank you screen
 thankyou_vis_screen = visual.TextStim(win, text=thankyou_screen, color="white")
 thankyou_vis_screen.draw()
