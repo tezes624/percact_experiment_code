@@ -1,4 +1,4 @@
-#EV
+#EVE
 #setup, imports
 import time
 import random
@@ -218,7 +218,7 @@ if "escape" in keys:
 #call experiment function
 experiment()
 
-#EV
+#EVE
 #saving data
 fieldnames = [
     "participant_id",
